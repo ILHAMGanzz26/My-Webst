@@ -1,16 +1,13 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "public/**/*", "use": "@vercel/static" }
-  ],
+  "cleanUrls": true,
   "routes": [
-    { "src": "^/$", "dest": "/index.html" },
-    { "src": "^/playground$", "dest": "/assets/html/playground.html" },
-    { "src": "^/game$", "dest": "/assets/html/game.html" },
-    { "src": "^/tiktok$", "dest": "/assets/html/ttdl.html" },
-    { "src": "^/instagram$", "dest": "/assets/html/igdl.html" },
-    { "src": "^/facebook$", "dest": "/assets/html/fbdl.html" },
-    { "src": "^/capcut$", "dest": "/assets/html/ccdl.html" },
-    { "src": "^/donate$", "dest": "/assets/html/donate.html" }
+    { "src": "/playground", "dest": "public/assets/html/playground.html" },
+    { "src": "/game", "dest": "public/assets/html/game.html" },
+    { "src": "/tiktok", "dest": "public/assets/html/ttdl.html" },
+    { "src": "/instagram", "dest": "public/assets/html/igdl.html" },
+    { "src": "/facebook", "dest": "public/assets/html/fbdl.html" },
+    { "src": "/capcut", "dest": "public/assets/html/ccdl.html" },
+    { "src": "/donate", "dest": "public/assets/html/donate.html" }
   ]
 }
