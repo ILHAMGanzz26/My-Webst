@@ -1,13 +1,7 @@
 {
   "version": 2,
-  "cleanUrls": true,
-  "routes": [
-    { "src": "/playground", "dest": "public/assets/html/playground.html" },
-    { "src": "/game", "dest": "public/assets/html/game.html" },
-    { "src": "/tiktok", "dest": "public/assets/html/ttdl.html" },
-    { "src": "/instagram", "dest": "public/assets/html/igdl.html" },
-    { "src": "/facebook", "dest": "public/assets/html/fbdl.html" },
-    { "src": "/capcut", "dest": "public/assets/html/ccdl.html" },
-    { "src": "/donate", "dest": "public/assets/html/donate.html" }
-  ]
+  "builds": [
+    { "src": "public/**/*", "use": "@vercel/static" }
+  ],
+  "cleanUrls": true
 }
