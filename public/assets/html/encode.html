@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Encrypt</title>
+<link rel="stylesheet" href="../style/encode.css" />
+</head>
+<body>
+
+<div class="container">
+  <h2>HTML Encrypt<br><small style="font-size:14px;color:#888;">Auto Browser-Ready</small></h2>
+  
+  <select id="method">
+    <option value="base64">Base64</option>
+    <option value="entities">HTML Entities</option>
+    <option value="hex">Hex</option>
+  </select>
+
+  <textarea id="input" placeholder="Masukkan HTML asli atau hasil encode di sini..."></textarea>
+  
+  <div class="btn-group-top">
+    <button id="encodeBtn" class="btn-primary">Encode</button>
+    <button id="downloadBtn" class="btn-success">Unduh</button>
+  </div>
+  <div class="btn-group-bottom">
+    <button id="clearBtn" class="btn-danger">Bersihkan</button>
+  </div>
+
+  <div class="output-wrapper">
+    <button id="copyBtn" class="copy-btn" title="Salin ke clipboard">
+      <svg viewBox="0 0 24 24">
+        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+      </svg>
+    </button>
+    <textarea id="output" placeholder="Hasil akan muncul di sini..."></textarea>
+  </div>
+
+  <div class="credit">Created by ILHAM A.</div>
+</div>
+
+<script src="../script/encode.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donasi QRIS</title>
+<link rel="stylesheet" href="/style/donate.css" />
+</head>
+<body>
+
+<!-- Video background -->
+<video class="video-bg" autoplay loop playsinline muted>
+    <source src="../../media/video/bg2.mp4" type="video/mp4">
+    Browser Anda tidak mendukung video.
+</video>
+<div class="overlay"></div>
+
+<!-- Container -->
+<div class="donasi-container">
+    <h1>DONASI UNTUK CREATOR</h1>
+    <p class="tutorial-text">Click QR untuk melihat full QRIS</p>
+    <img src="https://a.top4top.io/p_35152z3ye0.jpg" alt="QRIS Donasi" class="qris">
+    <p class="text-info">Scan QRIS di atas untuk donasi 😊</p>
+
+    <!-- Tombol atas -->
+    <div class="payment-buttons-top">
+        <button data-number="085762473480">GoPay</button>
+        <button data-number="085762473480">Dana</button>
+        <button data-link="https://saweria.co/Mikayru">Saweria</button>
+    </div>
+
+    <!-- Tombol bawah -->
+    <div class="payment-buttons-bottom">
+        <button data-link="https://wa.me/+6285762473480/">Kirim Bukti Donasi ke Atmin/Creator</button>
+    </div>
+</div>
+
+<p class="tap-audio">Tap layar untuk menyalakan audio jika tidak terdengar</p>
+<div id="toast">Nomor tersalin!</div>
+
+<!-- Modal QRIS -->
+<div id="modal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img id="modal-img" src="" alt="QRIS Full">
+</div>
+
+<script src="/script/donate.js"></script>
+
+</body>
+</html>

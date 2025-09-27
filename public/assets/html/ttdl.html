@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TikTok Downloader - No Watermark</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style/ttdl.css"/>
+</head>
+<body>
+<div class="overlay"></div>
+
+<div class="container">
+  <h1>TikTok Downloader</h1>
+  <input type="text" id="tk-url" placeholder="Masukkan URL TikTok">
+  <button id="load-btn">Download</button>
+
+  <select id="format-select">
+    <option value="video">Video MP4</option>
+    <option value="audio">Audio MP3</option>
+    <option value="cover">Cover / Thumbnail</option>
+  </select>
+
+  <div class="preview-container">
+    <img id="preview-image" alt="Preview Image">
+    <video id="preview-video" controls></video>
+    <audio id="preview-audio" controls></audio>
+  </div>
+  <h2 id="preview-title"></h2>
+
+  <div id="error-msg">Gagal memuat data. Periksa URL.</div>
+  <div class="created-by">Created By ILHAM A.</div>
+</div>
+
+<div id="loading-screen"><div class="loader"></div></div>
+
+<script src="/script/ttdl.js"></script>
+</body>
+</html>

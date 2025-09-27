@@ -1,0 +1,50 @@
+    @font-face {
+      font-family: 'Intro';
+      src: url('fonts/Intro-Regular.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0a0f1f, #152a55);
+      font-family: 'Intro', sans-serif;
+      color: white;
+      text-align: center;
+      padding: 5vw;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: clamp(24px, 5vw, 70px);
+      letter-spacing: 1px;
+      line-height: 1.4;
+      text-shadow:
+        2px 2px 0 #1b1b1b,
+        4px 4px 6px rgba(0,0,0,0.4),
+        0 0 10px rgba(0, 119, 255, 0.4);
+      max-width: 900px;
+    }
+
+    .word {
+      white-space: nowrap;
+      margin: 0 0.35em;
+      display: inline-block;
+    }
+
+    .letter {
+      opacity: 0;
+      display: inline-block;
+      transform: scale(0.5);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .letter.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+    

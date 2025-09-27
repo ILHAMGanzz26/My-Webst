@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Halaman Tidak Ditemukan</title>
+  <style>
+    /* Reset dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .monospace {
+      font-family: "Lucida Console", Courier, monospace;
+      font-size: 20px;
+      color: #ff4c4c;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #1c1c1c;
+      color: #ff4c4c;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+      position: relative;
+      z-index: 2; /* pastikan konten di atas partikel */
+    }
+
+    h1 {
+      font-size: 8rem;
+      text-shadow: 2px 2px 10px #ff0000aa;
+      animation: pulse 2s infinite;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      color: #ff7777;
+    }
+
+    /* Tombol aesthetic & animasi */
+    button {
+      padding: 12px 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(45deg, #ff1a1a, #ff4c4c, #ff7777);
+      background-size: 300% 300%;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.4s all ease;
+      box-shadow: 0 0 10px #ff1a1a66, 0 0 20px #ff4c4c44;
+      animation: gradientBG 3s ease infinite;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #ff1a1a, 0 0 30px #ff4c4c;
+    }
+
+    button:active {
+      transform: scale(0.95);
+      box-shadow: 0 0 10px #ff1a1a, 0 0 15px #ff4c4c;
+    }
+
+    /* Animasi */
+    @keyframes pulse {
+      0% { transform: scale(1); text-shadow: 2px 2px 10px #ff0000aa; }
+      50% { transform: scale(1.1); text-shadow: 2px 2px 20px #ff0000ff; }
+      100% { transform: scale(1); text-shadow: 2px 2px 10px #ff0000aa; }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Partikel background */
+    .particle {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      opacity: 0.7;
+      animation: float 3s linear infinite;
+      z-index: 1;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-50px) rotate(180deg); }
+      100% { transform: translateY(0) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>404</h1>
+    <p class="monospace">Oops! Halaman tidak ditemukan.</p>
+    <button href="/index">Kembali ke Beranda</button>
+  </div>
+
+  <script>
+    // Tombol kembali
+    const btn = document.getElementById('homeBtn');
+    btn.addEventListener('click', () => {
+      window.location.href = '/';
+    });
+
+    // Buat partikel
+    const colors = ['#ff1a1a', '#ff4c4c', '#ff7777'];
+    for (let i = 0; i < 30; i++) {
+      const particle = document.createElement('div');
+      particle.classList.add('particle');
+      particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+      particle.style.top = Math.random() * window.innerHeight + 'px';
+      particle.style.left = Math.random() * window.innerWidth + 'px';
+      particle.style.animationDuration = (2 + Math.random() * 3) + 's';
+      document.body.appendChild(particle);
+    }
+  </script>
+</body>
+</html>

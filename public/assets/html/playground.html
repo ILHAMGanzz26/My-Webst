@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Portfolio ILHAM A.">
+<meta property="og:description" content="Website multi-fungsi yang menyediakan berbagai layanan digital, downloader media sosial, hingga koleksi game.">
+<meta property="og:image" content="https://yourdomain.com/media/img/preview.jpg">
+<meta property="og:url" content="https://yourdomain.com">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../media/image/profile.png">
+<title>Tools Free By ILHAM A.</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="/style/playground.css"/>
+</head>
+<body>
+
+<div class="stars" id="stars"></div>
+
+<header>
+<h1><i class="fa-solid fa-store"></i> Hamz </h1>
+<button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+<nav>
+<a href="/index">Home</a>
+<a href="#produk">Produk</a>
+<a href="#downloaders">Downloaders</a>
+<a href="#games">Games</a>
+<a href="#faq">FAQ</a>
+<a href="https://t.me/ILHMCuy">Hubungi Admin</a>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+<a href="../../index.html" onclick="toggleMenu()">Home</a>
+<a href="#produk" onclick="toggleMenu()">Produk</a>
+<a href="#downloaders" onclick="toggleMenu()">Downloaders</a>
+<a href="#games" onclick="toggleMenu()">Games</a>
+<a href="#faq" onclick="toggleMenu()">FAQ</a>
+<a href="https://t.me/ILHMCuy" onclick="toggleMenu()">Hubungi Admin</a>
+</div>
+</header>
+
+<section class="hero" id="home">
+  <div class="profile-circle">
+    <img src="../../media/image/profile.png" alt="OYYINKUU" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="initials">IA</div>
+  </div>
+  <div class="tagline">Hi, I'm Ilham, a Front & Backend Developer</div>
+
+  <p>Nikmati layanan hosting terjangkau, script premium, downloader gratis, dan game seru semua mudah digunakan dan siap menemani aktivitas Anda.</p>
+  <a href="#produk" class="btn"><i class="fa-solid fa-cart-shopping"></i> Lihat Produk</a>
+</section>
+
+<section class="products" id="produk">
+<a href="https://wa.me/+6285762473480?text=Halo%20admin%20,%20saya%20tertarik%20dengan%20produk%20*Reseller%20Publik*%20%7C%20Harga:%20Rp10.000" class="card"><i class="fa-solid fa-server"></i><h3>Reseller Publik</h3><p>Harga: Rp10.000<br>Masa aktif 30 hari, garansi 15 hari.</p></a>
+<a href="https://wa.me/+6285762473480?text=Halo%20admin%20,%20saya%20tertarik%20dengan%20produk%20*Reseller%20Private*%20%7C%20Harga:%20Rp20.000" class="card"><i class="fa-solid fa-lock"></i><h3>Reseller Private</h3><p>Harga: Rp20.000<br>Server private kualitas premium.</p></a>
+<a href="https://wa.me/+6285762473480?text=Halo%20atmin,%20Saya%20mau%20beli%20*Script%20Mikayru%20Bot*%20nya" class="card"><i class="fas fa-robot bot-icon"></i><h3>Script Mikayru</h3><p>Harga: Rp35.000<br>Bot no error, fitur lengkap, free update dari admin.</p></a>
+</section>
+
+<div class="downloader-title" id="downloaders">Downloader</div>
+<section class="social-boxes">
+<a href="/tiktok" class="social-box"><i class="fab fa-tiktok"></i><p>TikTok</p></a>
+<a href="/instagram" class="social-box"><i class="fab fa-instagram"></i><p>Instagram</p></a>
+<a href="./facebook" class="social-box"><i class="fab fa-facebook"></i><p>Facebook</p></a>
+<a href="/capcut" class="social-box"><i class="fas fa-video"></i><p>CapCut</p></a>
+<a href="#" class="social-box" onclick="showError(event, 'Downloader')"><i class="fa-brands fa-twitter"></i><p>Twiter</p><div class="stempel">Segera Rilis</div></a>
+<a href="#" class="social-box" onclick="showError(event, 'Downloader')"><i class="fa-solid fa-comment"></i><p>Lahelu</p><div class="stempel">Segera Rilis</div></a>
+</section>
+
+<div class="downloader-title" id="games">Games</div>
+<section class="social-boxes">
+<a href="/game" class="social-box"><i class="fas fa-gamepad"></i><p>Game 1</p></a>
+<a href="#" class="social-box" onclick="showError(event, 'Game')"><i class="fas fa-gamepad"></i><p>Game 2</p><div class="stempel">Segera Rilis</div></a>
+<a href="#" class="social-box" onclick="showError(event, 'Game')"><i class="fas fa-gamepad"></i><p>Game 3</p><div class="stempel">Segera Rilis</div></a>
+<a href="#" class="social-box" onclick="showError(event, 'Game')"><i class="fas fa-gamepad"></i><p>Game 4</p><div class="stempel">Segera Rilis</div></a>
+<a href="#" class="social-box" onclick="showError(event, 'Game')"><i class="fas fa-gamepad"></i><p>Game 5</p><div class="stempel">Segera Rilis</div></a>
+<a href="#" class="social-box" onclick="showError(event, 'Game')"><i class="fas fa-gamepad"></i><p>Game 6</p><div class="stempel">Segera Rilis</div></a>
+</section>
+
+<section class="faq" id="faq">
+  <h2>❓ FAQ</h2>
+
+  <!-- Produk -->
+  <details>
+    <summary><i class="fa-solid fa-circle-chevron-right"></i> Bagaimana cara membeli Panel & Script?</summary>
+    <p>Silakan pilih produk di atas, lalu klik kotak produk. Anda akan diarahkan ke halaman pembelian atau WhatsApp admin untuk proses pembayaran.</p>
+  </details>
+
+  <details>
+    <summary><i class="fa-solid fa-circle-chevron-right"></i> Apakah ada garansi untuk Panel & Script?</summary>
+    <p>Ya, semua produk panel memiliki garansi 15 hari. Script juga mendapat update jika ada bug.</p>
+  </details>
+
+  <!-- Downloader -->
+  <details>
+    <summary><i class="fa-solid fa-circle-chevron-right"></i> Bagaimana cara menggunakan downloader?</summary>
+    <p>Pilih downloader sesuai platform (TikTok, Instagram, Facebook, CapCut), klik kotak, lalu masukkan link yang ingin didownload.</p>
+  </details>
+
+  <details>
+    <summary><i class="fa-solid fa-circle-chevron-right"></i> Apakah download cepat dan aman?</summary>
+    <p>Ya, semua download menggunakan server privat yang terencrypt dengan baik stabil dan aman tanpa watermark.</p>
+  </details>
+
+  <!-- Game -->
+  <details>
+    <summary><i class="fa-solid fa-circle-chevron-right"></i> Apakah game yang ditampilkan bisa dimainkan sekarang?</summary>
+    <p>Beberapa game masih dalam tahap rilis. Stempel “Segera Rilis” menandakan game belum tersedia.</p>
+  </details>
+
+  <details>
+    <summary><i class="fa-solid fa-circle-chevron-right"></i> Bagaimana cara bermain game?</summary>
+    <p>Ketika game sudah rilis, klik kotak game, ikuti instruksi di halaman game, dan mainkan langsung di browser atau unduh sesuai petunjuk.</p>
+  </details>
+
+  <!-- Layanan Umum -->
+  <details>
+    <summary><i class="fa-solid fa-circle-chevron-right"></i> Apakah semua layanan aman?</summary>
+    <p>Ya, semua layanan dijamin aman, terpercaya, dan bebas dari malware.</p>
+  </details>
+
+  <details>
+    <summary><i class="fa-solid fa-circle-chevron-right"></i> Apakah ada dukungan jika terjadi masalah?</summary>
+    <p>Ya, Anda bisa menghubungi admin melalui WhatsApp atau GitHub untuk bantuan teknis atau pertanyaan lainnya.</p>
+  </details>
+</section>
+
+  <section class="lyrics">
+    <h2>Information</h2>
+    <div class="lyrics-box" id="lyricsBox">
+      <p>
+        ILHAM A. hadir untukmu 💚<br>
+        Beli panel & script aman selalu<br>
+        Harga murah kualitas oke<br>
+        Order sekarang jangan tunggu lagi 🚀<br>
+        Tinggal klik, langsung beres semua 💡
+      </p>
+    </div>
+  </section>
+
+<footer id="kontak">
+<div class="social-icons">
+<a href="https://wa.me/+6285762473480"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://t.me/ILHMCuy"><i class="fa-brands fa-telegram"></i></a>
+<a href="https://github.com/ILHAMGanzz26"><i class="fa-brands fa-github"></i></a>
+</div>
+</footer>
+
+<audio id="bgMusic" autoplay loop>
+<source src="../../media/audio/so.mp3" type="audio/mpeg">
+</audio>
+<div style="position:fixed;bottom:20px;right:20px;z-index:1000;">
+<button onclick="toggleMusic()" class="btn"><i class="fa-solid fa-music"></i> Musik</button>
+</div>
+<!-- Popup Game Segera Rilis -->
+<div id="popupError" class="popup-overlay">
+  <div class="popup-box">
+    <h3>⚠️ Segera Rilis</h3>
+    <p></p>
+    <button onclick="closePopup()">Tutup</button>
+  </div>
+</div>
+
+<script src="/script/playground.js"></script>
+</body>
+</html>

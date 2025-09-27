@@ -1,0 +1,79 @@
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0d0d0d;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #cfcfcf;
+    overflow: hidden;
+  }
+  #gameContainer {
+    text-align: center;
+    position: relative;
+  }
+  canvas {
+    background: #111;
+    display: block;
+    margin: auto;
+    border: 2px solid #6c5ce7;
+  }
+  #score {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #a29bfe;
+  }
+  #controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  .btn {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    font-size: 30px;
+    border: none;
+    border-radius: 12px;
+    background: #1e1e1e;
+    color: #a29bfe;
+    box-shadow: 0 0 10px rgba(162,155,254,0.4);
+    cursor: pointer;
+  }
+  .btn:active {
+    background: #3c3c3c;
+  }
+  #homeBtn {
+    position: absolute;
+    top: 10px; right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 32px;
+    color: #a29bfe;
+    cursor: pointer;
+  }
+  @keyframes zoomFade {
+    0% { transform: scale(0.5); opacity: 0; }
+    60% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  #gameOverScreen {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(13,13,13,0.8);
+    color: #a29bfe;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  

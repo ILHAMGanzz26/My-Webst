@@ -1,0 +1,167 @@
+    :root {
+    --bg: #0d0d0d;
+    --card: #1a1a1a;
+    --text: #f1f1f1;
+    --primary: #0a84ff;
+    --primary-hover: #006fd6;
+    --accent: #0f0;
+    --border: #2a2a2a;
+    --danger: #ff3b30;
+    --danger-hover: #d92b23;
+    --success: #34c759;
+    --success-hover: #28a745;
+  }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  select, textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    outline: none;
+    box-sizing: border-box;
+    background: var(--card);
+    color: var(--text);
+  }
+
+  textarea {
+    min-height: 160px;
+    resize: vertical;
+    font-family: monospace;
+    color: var(--accent);
+  }
+
+  button {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: background 0.3s;
+  }
+  button:hover { opacity: 0.9; }
+
+  /* Cairan tombol */
+  button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 8px;
+    transform: translateY(-100%);
+    filter: blur(6px);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .melt::after {
+    animation: meltFlow 0.8s ease forwards;
+  }
+  @keyframes meltFlow {
+    0% { transform: translateY(-100%); opacity: 0.7; }
+    30% { transform: translateY(0%); opacity: 0.8; }
+    60% { transform: translateY(50%); opacity: 0.6; }
+    100% { transform: translateY(120%); opacity: 0; }
+  }
+
+  .btn-group-top, .btn-group-bottom {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    z-index: 1;
+  }
+  .btn-group-top button, .btn-group-bottom button { flex: 1; min-width: 120px; }
+
+  .btn-danger { background: var(--danger); z-index: 1; }
+  .btn-danger:hover { background: var(--danger-hover); }
+  .btn-primary { background: var(--primary); z-index: 1; }
+  .btn-primary:hover { background: var(--primary-hover); }
+  .btn-success { background: var(--success); z-index: 1; }
+  .btn-success:hover { background: var(--success-hover); }
+
+  /* Output wrapper untuk salin */
+  .output-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #output {
+    padding-top: 40px; /* space untuk tombol salin */
+  }
+
+  .copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--primary);
+    border: none;
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .copy-btn svg { width: 20px; height: 20px; fill: white; }
+  .copy-btn:hover { background: var(--primary-hover); }
+
+  /* Mobile layout */
+  @media (max-width: 600px) {
+    .btn-group-top { flex-direction: row; }
+    .btn-group-bottom { flex-direction: row; }
+    .btn-group-bottom button { width: 100%; min-width: unset; }
+  }
+
+  /* Laptop / PC layout */
+  @media (min-width: 601px) {
+    .btn-group-top, .btn-group-bottom { flex-direction: row; }
+    .btn-group-top button, .btn-group-bottom button { flex: 1; }
+    #output { min-height: 250px; }
+  }
+
+  /* Footer credit */
+  .credit {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #888;
+  }

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Masukan Kata Sandi Atmin</title>
+<link rel="stylesheet" href="../style/pw.css" />
+</head>
+<body>
+  <div class="wrap" id="wrap">
+    <div class="warning-text">⚠ Masukan Kata Sandi Admin.</div>
+    <form id="pwForm" autocomplete="off" novalidate>
+      <input id="pw" type="password" placeholder="Kata sandi" required autofocus />
+      <button type="submit">Masuk</button>
+    </form>
+    <div class="err" id="err"></div>
+  </div>
+  <div id="successIcon" style="display:none; text-align:center;">
+    <div class="checkmark" id="checkmark"></div>
+  </div>
+
+  <audio id="successSound" preload="auto">
+    <source src="https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="errorSound" preload="auto">
+    <source src="https://assets.mixkit.co/active_storage/sfx/2108/2108-preview.mp3" type="audio/mpeg">
+  </audio>
+
+<script src="../script/pw.js"></script>
+</body>
+</html>

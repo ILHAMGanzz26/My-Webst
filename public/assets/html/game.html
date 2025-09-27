@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snake Game Smooth & Responsive</title>
+<link rel="stylesheet" href="/style/game.css" />
+</head>
+<body>
+<div id="gameContainer">
+  <button id="homeBtn" onclick="window.location.href='./playground.html'">🏠</button>
+  <div id="score">Score: 0</div>
+  <canvas id="gameCanvas"></canvas>
+  <div id="controls">
+    <div style="width:100%;text-align:center;">
+      <button class="btn" onclick="startGame('UP')">⬆️</button>
+    </div>
+    <div>
+      <button class="btn" onclick="startGame('LEFT')">⬅️</button>
+      <button class="btn" onclick="startGame('DOWN')">⬇️</button>
+      <button class="btn" onclick="startGame('RIGHT')">➡️</button>
+    </div>
+  </div>
+</div>
+
+<div id="gameOverScreen">
+  <div>GAME OVER</div>
+  <div id="finalScore"></div>
+  <button class="btn" onclick="initGame(false); gameRunning=false;" style="margin-top:20px;">RESTART</button>
+</div>
+
+<audio id="eatSound" src="../../media/audio/game.mp3"></audio>
+<audio id="gameOverSound" src="../../media/audio/gameover.mp3"></audio>
+
+<script src="/script/game.js"></script>
+</body>
+</html>

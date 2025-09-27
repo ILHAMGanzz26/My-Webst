@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capcut Downloader - No Watermark</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style/ccdl.css" />
+</head>
+<body>
+
+<!-- Background GIF/Video -->
+<img id="bg-gif" class="bg-media" src="https://c.top4top.io/p_35367lynf0.gif" style="display:none;">
+<video id="bg-video" class="bg-media" autoplay muted loop playsinline style="display:none;">
+  <source src="https://cdn.coverr.co/videos/coverr-flowing-purple-smoke-4455/1080p.mp4" type="video/mp4">
+</video>
+<div class="overlay"></div>
+
+<div class="container">
+  <h1>Capcut Downloader</h1>
+  <input type="text" id="capcut-url" placeholder="Masukkan link CapCut">
+  <button id="load-btn">Download</button>
+
+  <div id="video-info" style="display:none;">
+    <img id="thumbnail" class="thumbnail" src="" alt="Thumbnail">
+    <h2 id="title"></h2>
+    <select id="video-select"></select>
+    <a id="download-link" class="download-btn" href="#" target="_blank"><button>Download Video</button></a>
+  </div>
+
+  <div id="error-msg" class="error">Gagal memuat data. Periksa URL.</div>
+
+  <div class="created-by">Created By ILHAM A.</div>
+</div>
+
+<script src="/script/ccdl.js"></script>
+</body>
+</html>
