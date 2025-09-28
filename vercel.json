@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "cleanUrls": true,
-  "routes": [
-    { "src": "/playground", "dest": "/assets/html/playground.html" },
-    { "src": "/game", "dest": "/assets/html/game.html" },
-    { "src": "/tiktok", "dest": "/assets/html/ttdl.html" },
-    { "src": "/instagram", "dest": "/assets/html/igdl.html" },
-    { "src": "/facebook", "dest": "/assets/html/fbdl.html" },
-    { "src": "/capcut", "dest": "/assets/html/ccdl.html" },
-    { "src": "/donate", "dest": "/assets/html/donate.html" }
+  "rewrites": [
+    { "source": "/playground", "destination": "/assets/html/playground.html" },
+    { "source": "/game", "destination": "/assets/html/game.html" },
+    { "source": "/tiktok", "destination": "/assets/html/ttdl.html" },
+    { "source": "/instagram", "destination": "/assets/html/igdl.html" },
+    { "source": "/facebook", "destination": "/assets/html/fbdl.html" },
+    { "source": "/capcut", "destination": "/assets/html/ccdl.html" },
+    { "source": "/donate", "destination": "/assets/html/donate.html" }
   ]
 }
